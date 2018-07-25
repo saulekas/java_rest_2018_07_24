@@ -5,6 +5,15 @@ public class student {
     private String name;
     private String surname;
     private String email;
+    private String phone;
+
+    public student(int id, String name, String surname, String email, String phone) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+    }
 
     public student(int id, String name, String surname, String email) {
         this.id = id;
@@ -46,5 +55,13 @@ public class student {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }
